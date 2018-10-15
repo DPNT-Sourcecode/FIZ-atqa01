@@ -20,6 +20,9 @@ public class FizzBuzzSolution {
     		output = output + " buzz";
     		}
     	}
+    	if(!(number%3 == 0 || ("" + number).indexOf('3')!= -1) && !(number%5 == 0 || ("" + number).indexOf('5')!= -1)) {
+    		output = "" + number;
+    	}
 
     	
         return output;
