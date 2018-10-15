@@ -32,16 +32,19 @@ public class FizzBuzzSolution {
     	if (count == 1 && number > 10) {
     		
     		if(output.equals("")) {
-    			if(number %2 == 0) {
+    			if(number % 2 == 0) {
     				
     			output = "deluxe";
     			}else{
     				output = "fake deluxe";
     			}
     		} else {
-    			if(number %2 == 0) {
+    			if(number % 2 == 0) {
     				
     			output = output + " deluxe"; 
+    			} else {
+    				output = output + " fake deluxe";
+    			}
     			
     		}
     		
