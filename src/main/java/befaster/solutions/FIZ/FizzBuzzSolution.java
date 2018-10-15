@@ -20,6 +20,28 @@ public class FizzBuzzSolution {
     		output = output + " buzz";
     		}
     	}
+    	
+    	String num = "0123456789";
+    	int count = 0;
+    	for (int i = 0 ; i < num.length(); i++){
+    		if ( (""+number).indexOf(num.charAt(i)) !=-1){
+    			count++;
+    		}
+    	}
+    	
+    	if (count == 1 && number > 10) {
+    		
+    		if(output.equals("")) {
+    			
+    			output = "deluxe";
+    		} else {
+    			
+    			output = output + " deluxe"; 
+    		}
+    		
+    		
+    	}
+    	
     	if(!(number%3 == 0 || ("" + number).indexOf('3')!= -1) && !(number%5 == 0 || ("" + number).indexOf('5')!= -1)) {
     		output = "" + number;
     	}
