@@ -12,15 +12,22 @@ public class FizzBuzzSolution {
     	if(number%3 == 0 && ("" + number).indexOf('3')!= -1) {
     		
     		output = output + "fizz deluxe";
+    	} else if(number%3 == 0 || ("" + number).indexOf('3')!= -1){
+    		output = output + "fizz";
     	}
     	if(number%5 == 0 && ("" + number).indexOf('5')!= -1) {
     		if(output.equals("")) {
     			output = "buzz deluxe";
     		} else {
-    		output = output + " buzz deluxe";
+    		output = output + " buzz deluxe ";
+    		}
+    	} else if(number%5 == 0 || ("" + number).indexOf('5')!= -1) {
+    		if(output.equals("")) {
+    			output = "buzz";
+    		} else {
+    		output = output + " buzz";
     		}
     	}
-    	
     	String num = "0123456789";
     	int count = 0;
     	for (int i = 0 ; i < num.length(); i++){
