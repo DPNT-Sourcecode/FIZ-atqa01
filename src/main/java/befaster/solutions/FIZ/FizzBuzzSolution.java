@@ -41,7 +41,13 @@ public class FizzBuzzSolution {
     		}
     	}
     	
-    	
+    	if(output.contains(" fake deluxe")) {
+    		output.replace(" fake deluxe", "");
+    		output = output + " fake deluxe";
+    	} else if(output.contains(" deluxe")) {
+    		output.replace(" deluxe", "");
+    		output = output + " deluxe";
+    	} 
     	if(output.equals("")) {
     		output = "" + number;
     	}
