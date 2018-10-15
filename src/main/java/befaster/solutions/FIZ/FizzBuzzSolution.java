@@ -9,15 +9,15 @@ public class FizzBuzzSolution {
     	if(number > 9999 || number < 1){
     		throw new IllegalArgumentException("Input parameters out of bounds");
     	}
-    	if(number%3 == 0 || ("" + number).indexOf('3')!= -1) {
+    	if(number%3 == 0 && ("" + number).indexOf('3')!= -1) {
     		
-    		output = output + "fizz";
+    		output = output + "fizz deluxe";
     	}
-    	if(number%5 == 0 || ("" + number).indexOf('5')!= -1) {
+    	if(number%5 == 0 && ("" + number).indexOf('5')!= -1) {
     		if(output.equals("")) {
-    			output = "buzz";
+    			output = "buzz deluxe";
     		} else {
-    		output = output + " buzz";
+    		output = output + " buzz deluxe";
     		}
     	}
     	
