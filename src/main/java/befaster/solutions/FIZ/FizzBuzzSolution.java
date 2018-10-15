@@ -41,7 +41,7 @@ public class FizzBuzzSolution {
     		if(output.equals("")) {
     			if(number % 2 == 0) {
     				
-    			output = "deluxe";
+    			;
     			}else{
     				output = "fake deluxe";
     			}
